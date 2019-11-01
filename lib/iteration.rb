@@ -44,7 +44,7 @@ def total_even_pairs(src)
   x = 0
 
   while x < src.count do
-    if ((src[x][0] + src[x][1]) % 2) == 0
+    if ((src[x][0] + src[x][1]) % 2) == 1
       total = (src[x][0] + src[x][1]) + total
     end
     x += 1
