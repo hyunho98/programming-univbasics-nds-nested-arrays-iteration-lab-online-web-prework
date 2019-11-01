@@ -41,10 +41,10 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
   total = 0
-  x = 1
+  x = 0
 
   while x < src.count do
-    if ((src[x][0] + src[x][1]) % 2) == 0
+    if src[x][0] % 2 == 0 && src[x][1] % 2 == 0
       total += src[x][0] + src[x][1]
     end
     x += 1
